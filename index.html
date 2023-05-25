@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvesh Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c20db4820f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span class="letter">S</span>arvesh <span class="letter">R</span>ane</h1>
+
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+
+                <div id="astronaut2">
+                    <img src="https://images.vexels.com/media/users/3/152641/isolated/preview/2b3d63661f0d7fe62c36168604985f26-space-cosmonaut-cartoon-by-vexels.png"
+                        alt="" width="250">
+                </div>
+                <!-- <p>UI/UX Designer</p> -->
+                <!-- <h1>Hi, I'm <span>Sarvesh Rane</span><br>From India</h1> -->
+                <div class="slider">
+                    <!-- <div>
+                        <h4 class="logo"><span class="letter">S</span>arvesh <span class="letter">R</span>ane</h4>
+                    </div> -->
+                    <div class="caption">
+                        I am
+                        <div class="text-box">
+                            <div class="chngdiv">Sarvesh Rane</div>
+                            <div class="chngdiv">a Web Developer</div>
+                            <div class="chngdiv">a Proud Indian</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="astronaut">
+                    <img src="https://images.vexels.com/media/users/3/152639/isolated/preview/506b575739e90613428cdb399175e2c8-space-astronaut-cartoon-by-vexels.png"
+                        alt="" width="250">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="style4">
+    <!---------------------------- about ---------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img id="imgabout" src="images/coder.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="fontcurve">Hi I am Sarvesh Rane, a 21 year old Web developer living in Mumbai, India. I am
+                        a Computer Science Bachelor. Have a look at my skills or just connect with me on LinkedIn. I am
+                        always excited to work on Projects . Currently, I have worked on a project using technologies
+                        like Angular, NodeJS and MySQL </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experince')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('courses')">Certifications & Courses</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language</span><br>Python</li>
+                            <li><span>Front End </span><br>Html, Css, Javascript, Angular </li>
+                            <li><span>Back End</span><br>MySql, Node.js</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experince">
+                        <ul>
+                            <li><span>2022</span><br>Book My Insurance - Web Developer</li>
+                            <p>Worked as a Web Developer on a project using technologies
+                                like Angular, NodeJS and MySQL  </p>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017</span><br>Poorna Prajna High School - 76%</li>
+                            <li><span>2019</span><br>Sainik School Amboli - 74.46%</li>
+                            <li><span>2022</span><br>Patkar College - 8.9 cgpa</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="courses">
+                        <ul>
+                            <li><span>May 2023</span><br>Course Name - <b>AWS For Beginners</b><br>Online Platform - <b>Great Learning</b><br>Certificate link - <a style="color: white;" href="https://verify.mygreatlearning.com/verify/KQBDQKWN">https://verify.mygreatlearning.com/verify/KQBDQKWN</a></li>
+                            <li><span>May 2023</span><br>Course Name - <b>Angular</b><br>Online Platform - <b>Cursa</b>
+                                <!-- <br>Certificate link - <a style="color: white;" href="https://verify.mygreatlearning.com/verify/KQBDQKWN">https://verify.mygreatlearning.com/verify/KQBDQKWN</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr class="style4">
+
+    <!-- -----------------------Services---------------------- -->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aut soluta iure alias vitae,
+                        iste, ab laudantium ducimus deserunt, sunt molestiae assumenda laborum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aut soluta iure alias vitae,
+                        iste, ab laudantium ducimus deserunt, sunt molestiae assumenda laborum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aut soluta iure alias vitae,
+                        iste, ab laudantium ducimus deserunt, sunt molestiae assumenda laborum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- <hr class="style4"> -->
+
+    <!-- ---------------------------------portfolio--------------------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/book-store.jpg">
+                    <div class="layer">
+                        <h3>My Book Store</h3>
+                        <p>An E-commerce website where can get varieties of book available to purchase.The Online Book
+                            Shopping Store
+                            to manage, buy, add, remove and sell books. Book name and Quantity selection, Login and
+                            logout security for
+                            both user and admin. Seperate Profile for all
+                        </p>
+                        <a href="https://github.com/SarveshRane2002"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/to-do-list.jpg" style="height: 100%;">
+                    <div class="layer">
+                        <h3>Todo List</h3>
+                        <p>An application specially built to keep track of tasks that need to be done. This application
+                            will be
+                            like a task keeper where the user would be able to enter the tasks that they need to do.
+                            Once they are done with
+                            their tasks they can also remove them from the list.
+                        </p>
+                        <a href="https://github.com/SarveshRane2002"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>An E-commerce website where can get varieties of items available to purchase.The Online Shopping Store
+                            to manage, buy, add, remove and sell . product name and Quantity selection, Login and
+                            logout security for both user and admin. Seperate Profile for all
+                        </p>
+                        <a href="https://github.com/SarveshRane2002"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" id="seemore">See More</a>
+        </div>
+    </div>
+
+    <hr class="style4">
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="mailto:sarveshrane101@gmail.com"><i
+                                class="fas fa-paper-plane"></i></a>sarveshrane101@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>9082357475</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/sarvesh.rane.3958" target="_blank"><i class="fab fa-facebook"
+                                id="fb"></i></a>
+                        <a href="mailto: sarveshrane101@gmail.com" target="_blank" id="ml"><i
+                                class="fa-sharp fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/sarvesh-rane-99657b242/" target="_blank"><i
+                                class="fab fa-linkedin" id="linkden"></i></a>
+                        <a href="https://github.com/SarveshRane2002" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=9082357475" target="_blank" id="wp"><i
+                                class="fab fa-whatsapp" style="margin-left:2px;"></i></a>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3766.8904612462256!2d72.86095436417148!3d19.243605101685073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1668497168377!5m2!1sen!2sin"
+                            width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <a href="images/SarveshRane_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" id="myForm">
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                        <input type="text" id="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                        <!-- <button type="submit" class="change">
+                            <div class="sr">
+                                <div class="tick">
+                                </div>
+                            </div>
+                        </button> -->
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>No &#169 Copyright issues. Made with <i class="fas fa-heart"></i> in <span> 𝐈𝐍𝐃𝐈𝐀 </span></p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- ----------------------------------------------javascript--------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        let button = document.querySelector('.change');
+        let buttonText = document.querySelector('.tick');
+
+        const tickMark = "<svg width=\"58\" height=\"45\" viewBox=\"0 0 58 45\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"#fff\" fill-rule=\"nonzero\" d=\"M19.11 44.64L.27 25.81l5.66-5.66 13.18 13.18L52.07.38l5.65 5.65\"/></svg>";
+
+        buttonText.innerHTML = "Submit";
+
+        button.addEventListener('click', function () {
+
+            if (buttonText.innerHTML !== "Submit") {
+                buttonText.innerHTML = "Submit";
+            } else if (buttonText.innerHTML === "Submit") {
+                buttonText.innerHTML = tickMark;
+            }
+            this.classList.toggle('change__circle');
+        });
+    </script>
+
+    <script>
+        function submitForm() {
+            alert("oook")
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwBHHIKZOsvBdIXiLL1KSmjjWKd14mgOnueiO2-t6WTVwe8hWHoWXthBvTp5jlbKsWWCw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        console.log(form);
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+        console.log(this.FormData)
+    </script>
+
+
+    <script>
+        let sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0"
+            console.log("opeeeeen");
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px"
+            console.log("closeeeeeee");
+        }
+    </script>
+</body>
+
+</html>
